@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Volume 1.0</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/simple-peer@9/simplepeer.min.js"></script>
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Volume 1.0</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<main>
+  <div class="left">
+    <h2>Welcome!</h2>
+    <p class="big-text shadow">We’re currently under development</p>
+    <p>Volume 1.0 is the next-gen voice chat platform built for real-time connection.
+      Clean audio. Zero distractions. Just pure conversation.</p>
+  </div>
+
+  <div class="right" id="right-content">
+    <h3>Plz join the room</h3>
+    <p>Note: This is an only room for DUNE PC.<br> Kindly select your name and join.</p>
+    <select id="username">
+      <option disabled selected>Choose a name</option>
+      <option>BLAZEEE H@CK (IGL)</option>
+      <option>VELOZZZ H@CK</option>
+      <option>STEIKEE H@CK</option>
+      <option>FLAMEEE H@CK</option>
+      <option>LITTLEXRFF</option>
+      <option>RONINNN H@CK</option>
+    </select>
+    <button id="joinBtn">Join Room</button>
+    <div class="icons">
+      <i id="micIcon" class="fas fa-microphone on"></i>
+      <i id="speakerIcon" class="fas fa-volume-up on"></i>
+    </div>
+  </div>
+</main>
+
+<div class="modal hidden" id="leaveModal">
+  <div class="modal-content">
+    <p>Are you sure you want to leave?</p>
+    <button id="confirmLeave">Yes</button>
+    <button id="cancelLeave">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
