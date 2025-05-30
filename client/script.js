@@ -102,7 +102,9 @@ function createPeer(initiator, remoteName) {
     trickle: true,
     stream: myStream,
     config: {
-      iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+      iceServers: [
+        { urls: 'stun:stun.l.google.com:19302' }
+      ]
     }
   });
 
@@ -119,3 +121,4 @@ function createPeer(initiator, remoteName) {
 
   return peer;
 }
+
